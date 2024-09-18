@@ -1,0 +1,16 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.guides.bracketPairs": true,
+  "git.enableSmartCommit": true,
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#45B39D",
+    "activityBar.background": "#45B39D",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#155e02",
+    "activityBarBadge.background": "#155e02",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#e7e7e799"
+  }
+}
