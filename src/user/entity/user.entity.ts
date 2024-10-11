@@ -2,6 +2,7 @@ import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, OneToMany, Before
 import * as bcrypt from 'bcrypt';
 import { RefreshToken } from '../../refresh-token/refresh-token.entity';
 import { Exclude } from 'class-transformer';
+import { Sensor } from '../../sensor/entity/sensor.entity';
 
 @Entity()
 export class User {
@@ -36,4 +37,7 @@ export class User {
     if (!this.password) return;
     this.password = await bcrypt.hash(this.password, 10);
   }
+
+  @OneToMany(() => Sensor, (sensor) => sensor.user)
+  sensors: Sensor[];
 }
