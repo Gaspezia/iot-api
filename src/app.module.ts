@@ -7,6 +7,7 @@ import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { RefreshTokenModule } from './refresh-token/refresh-token.module';
 import { SensorModule } from './sensor/sensor.module';
+import { HistoryModule } from './sensor/history.module';
 
 @Module({
   imports: [
@@ -30,7 +31,8 @@ import { SensorModule } from './sensor/sensor.module';
     UserModule,
     AuthModule,
     RefreshTokenModule,
-    SensorModule
+    SensorModule,
+    HistoryModule
   ],
   controllers: [AppController],
   providers: [AppService]
