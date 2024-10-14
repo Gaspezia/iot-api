@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { History } from './entity/history.entity';
 import { CreateHistoryDto } from './dto/create-history.dto';
-import { Sensor } from './entity/sensor.entity';
+import { Sensor } from '../entity/sensor.entity';
 
 @Injectable()
 export class HistoryService {

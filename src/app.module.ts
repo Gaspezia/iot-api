@@ -7,7 +7,7 @@ import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { RefreshTokenModule } from './refresh-token/refresh-token.module';
 import { SensorModule } from './sensor/sensor.module';
-import { HistoryModule } from './sensor/history.module';
+import { HistoryModule } from './sensor/history/history.module';
 
 @Module({
   imports: [

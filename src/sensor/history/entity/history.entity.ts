@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { Sensor } from './sensor.entity';
+import { Sensor } from '../../entity/sensor.entity';
 
 @Entity()
 export class History {
