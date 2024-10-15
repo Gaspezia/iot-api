@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { RefreshTokenModule } from './refresh-token/refresh-token.module';
 import { SensorModule } from './sensor/sensor.module';
 import { HistoryModule } from './sensor/history/history.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
   imports: [
@@ -32,7 +33,8 @@ import { HistoryModule } from './sensor/history/history.module';
     AuthModule,
     RefreshTokenModule,
     SensorModule,
-    HistoryModule
+    HistoryModule,
+    DashboardModule
   ],
   controllers: [AppController],
   providers: [AppService]

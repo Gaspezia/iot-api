@@ -15,14 +15,13 @@ export class HistoryService {
   ) {}
 
   async createHistory(createHistoryDto: CreateHistoryDto): Promise<History> {
-    const { sensorId, name, value, time } = createHistoryDto;
+    const { sensorId, value, time } = createHistoryDto;
     const sensor = await this.sensorRepository.findOne({ where: { id: sensorId } });
     if (!sensor) {
       return;
     }
     const history = this.historyRepository.create({
       sensor,
-      name,
       value,
       time: time || new Date()
     });
